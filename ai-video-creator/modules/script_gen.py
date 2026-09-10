@@ -81,8 +81,7 @@ def _get_client(api_key: str) -> genai.Client:
 
 def fetch_trending_topics(
     api_key: str,
-    model: str = "gemini-2.5-flash",
-    niche: Optional[str] = None,
+    model: str = "gemini-3.6-flash",
     count: int = 2,
 ) -> list[str]:
     """
@@ -123,8 +122,7 @@ def fetch_trending_topics(
 def generate_script(
     api_key: str,
     topic: str,
-    model: str = "gemini-2.5-flash",
-    language: str = "English",
+    model: str = "gemini-3.6-flash",
     duration_seconds: int = 40,
     scene_count: int = 6,
     art_style: str = "3D animated cartoon movie style, vibrant colors, Pixar-like rendering",
